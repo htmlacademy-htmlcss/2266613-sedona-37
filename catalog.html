@@ -38,13 +38,14 @@
             </li>
             <li class="navigation__buttons-item">
               <a class="navigation__buttons-link" href="#">
-                <span class="visually-hidden">Избранное</span><b>12</b>
+                <span class="visually-hidden">Избранное</span><b class="navigation__favorites-amount">12</b>
               </a>
             </li>
             <li class="navigation__buttons-item">
-              <a class="navigation__buttons-link navigation__buttons-link_flex">
+              <!-- <a class="navigation__buttons-link navigation__buttons-link_flex">
                 <span class="navigation__buttons-link-text">Хочу сюда!</span>
-              </a>
+              </a> -->
+              <button class="button navigation__buttons-button" type="button">Хочу сюда!</button>
             </li>
           </ul>
         </nav>
@@ -57,63 +58,61 @@
         <!-- Filter -->
 
         <section class="filter">
-          <div class="inner-wrapper">
-            <h1 class="filter__title">Гостиницы Седоны</h1>
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html"><span
-                    class="visually-hidden"></span></a></li>
-              <li class="breadcrumbs__item"><span class="breadcrumbs__link-text">Гостиницы</span></li>
-            </ul>
+          <h1 class="filter__title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html"><span
+                  class="visually-hidden"></span></a></li>
+            <li class="breadcrumbs__item"><span class="breadcrumbs__link-text">Гостиницы</span></li>
+          </ul>
 
-            <form class="filter__form" action="https://echo.htmlacademy.ru/" method="GET">
-              <fieldset class="filter__group">
-                <legend class="filter__group-title">Инфраструктура:</legend>
-                <label class="filter__group-control">
-                  <input class="filter__group-control-input" type="checkbox" name="pool" checked>
-                  Бассейн
-                </label>
-                <label class="filter__group-control">
-                  <input class="filter__group-control-input" type="checkbox" name="parking" checked>
-                  Парковка
-                </label>
-                <label class="filter__group-control">
-                  <input class="filter__group__control-input" type="checkbox" name="wi-fi">
-                  Wi-Fi
-                </label>
-              </fieldset>
+          <form class="filter__form" action="https://echo.htmlacademy.ru/" method="GET">
+            <fieldset class="filter__group">
+              <legend class="filter__group-title">Инфраструктура:</legend>
+              <label class="filter__group-control">
+                <input class="filter__group-control-input" type="checkbox" name="pool" checked>
+                Бассейн
+              </label>
+              <label class="filter__group-control">
+                <input class="filter__group-control-input" type="checkbox" name="parking" checked>
+                Парковка
+              </label>
+              <label class="filter__group-control">
+                <input class="filter__group__control-input" type="checkbox" name="wi-fi">
+                Wi-Fi
+              </label>
+            </fieldset>
 
-              <fieldset class="filter__group">
-                <legend class="filter__group-title">Тип Жилья:</legend>
-                <label class="filter__group-control">
-                  <input class="filter__group-control-input" type="radio" name="housing" value="hotels" checked>
-                  Гостиница
-                </label>
-                <label class="filter__group-control">
-                  <input class="filter__group-control-input" type="radio" name="housing" value="motels">
-                  Мотель
-                </label>
-                <label class="filter__group-control">
-                  <input class="filter__group-control-input" type="radio" name="housing" value="apartments">
-                  Апартаменты
-                </label>
-              </fieldset>
+            <fieldset class="filter__group">
+              <legend class="filter__group-title">Тип Жилья:</legend>
+              <label class="filter__group-control">
+                <input class="filter__group-control-input" type="radio" name="housing" value="hotels" checked>
+                Гостиница
+              </label>
+              <label class="filter__group-control">
+                <input class="filter__group-control-input" type="radio" name="housing" value="motels">
+                Мотель
+              </label>
+              <label class="filter__group-control">
+                <input class="filter__group-control-input" type="radio" name="housing" value="apartments">
+                Апартаменты
+              </label>
+            </fieldset>
 
-              <fieldset class="filter__price-slider">
-                <legend class="filter__price-slider-title">Стоимость, ₽:</legend>
-                <label class="filter__price-slider-label">
-                  <input class="filter__price-slider-input" type="number" placeholder="от" value="0">
-                </label>
-                <label class="filter__price-slider-label">
-                  <input class="filter__price-slider-input" type="number" placeholder="до" value="9000">
-                </label>
-
-                <!-- Пока не рассказывалось как делать элемент с бегунком -->
-
-                <button class="filter__button-apply button" type="submit">Применить</button>
-                <button class="filter__button-reset button" type="reset">Сбросить</button>
-              </fieldset>
-            </form>
-          </div>
+            <fieldset class="filter__price-slider">
+              <legend class="filter__price-slider-title">Стоимость, ₽:</legend>
+              <label class="filter__price-slider-label">
+                <input class="filter__price-slider-input" type="number" placeholder="от" value="0">
+              </label>
+              <label class="filter__price-slider-label">
+                <input class="filter__price-slider-input" type="number" placeholder="до" value="9000">
+              </label>
+            </fieldset>
+            <!-- Пока не рассказывалось как делать элемент с бегунком -->
+            <div class="filter__buttons-wrapper">
+              <button class="filter__button-apply button" type="submit">Применить</button>
+              <button class="filter__button-reset button" type="reset">Сбросить</button>
+            </div>
+          </form>
         </section>
 
         <!-- Catalog-->
@@ -130,7 +129,7 @@
                   <option class="catalog__sorting-item" value="expensive">Сначала дорогие</option>
                 </select>
                 <ul class="catalog__theme-list">
-                  <li class="catalog__theme-item">
+                  <li class="catalog__theme-item catalog__theme-item_active">
                     <a class="catalog__theme-link" href="#">
                       <span class="visually-hidden">Показать небольшие карточки</span>
                       <svg class="catalog-tile-style-icon">
@@ -160,12 +159,12 @@
 
             <ul class="catalog__card-list">
               <li class="catalog__card-item card">
+                <a class="card__title-link" href="#">
+                  <h3 class="card__title">Amara Resort & Spa</h3>
+                </a>
                 <a class="card__img-link" href="#">
                   <img class="card__img" src="./images/catalog/catalog-hotel-1.jpg" width="300" height="212"
                     alt="Вид на звездное небо между двух скал.">
-                </a>
-                <a class="card__title-link" href="#">
-                  <h3 class="card__title">Amara Resort & Spa</h3>
                 </a>
                 <div class="card_wrapper-space-between">
                   <span class="card__text">Гостиница</span>
@@ -188,12 +187,12 @@
               </li>
 
               <li class="catalog__card-item card">
+                <a class="card__title-link" href="#">
+                  <h3 class="card__title">Villas at Poco Diablo</h3>
+                </a>
                 <a class="card__img-link" href="#">
                   <img class="card__img" src="./images/catalog/catalog-hotel-2.jpg" width="300" height="212"
                     alt="Вид на мощные и массивные горы, скалу Белл-Рок под пасмурным небом и с радугой.">
-                </a>
-                <a class="card__title-link" href="#">
-                  <h3 class="card__title">Villas at Poco Diablo</h3>
                 </a>
                 <div class="card_wrapper-space-between">
                   <span class="card__text">Гостиница</span>
@@ -216,12 +215,12 @@
               </li>
 
               <li class="catalog__card-item card">
+                <a class="card__title-link" href="#">
+                  <h3 class="card__title">Desert Quail Inn</h3>
+                </a>
                 <a class="card__img-link" href="#">
                   <img class="card__img" src="./images/catalog/catalog-hotel-3.jpg" width="300" height="212"
                     alt="Вид на скалу Белл-Рок в дневное время.">
-                </a>
-                <a class="card__title-link" href="#">
-                  <h3 class="card__title">Desert Quail Inn</h3>
                 </a>
                 <div class="card_wrapper-space-between">
                   <span class="card__text">Гостиница</span>
@@ -244,12 +243,12 @@
               </li>
 
               <li class="catalog__card-item card">
+                <a class="card__title-link" href="#">
+                  <h3 class="card__title">GreenTree Inn</h3>
+                </a>
                 <a class="card__img-link" href="#">
                   <img class="card__img" src="./images/catalog/catalog-hotel-4.jpg" width="300" height="212"
                     alt="Вид на скалу Белл-Рок и звездное небо в ночное время.">
-                </a>
-                <a class="card__title-link" href="#">
-                  <h3 class="card__title">GreenTree Inn</h3>
                 </a>
                 <div class="card_wrapper-space-between">
                   <span class="card__text">Гостиница</span>
