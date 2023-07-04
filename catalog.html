@@ -129,10 +129,10 @@
                   <option class="catalog__sorting-item" value="expensive">Сначала дорогие</option>
                 </select>
                 <ul class="catalog__theme-list">
-                  <li class="catalog__theme-item catalog__theme-item_active">
-                    <a class="catalog__theme-link" href="#">
+                  <li class="catalog__theme-item">
+                    <a class="catalog__theme-link catalog__theme-link_active" href="#">
                       <span class="visually-hidden">Показать небольшие карточки</span>
-                      <svg class="catalog-tile-style-icon">
+                      <svg class="catalog-tile-style-icon" aria-hidden="true" focusable="false">
                         <use xlink:href="./images/catalog/catalog-style-sprite.svg#catalog-tile-style"></use>
                       </svg>
                     </a>
@@ -140,7 +140,7 @@
                   <li class="catalog__theme-item">
                     <a class="catalog__theme-link" href="#">
                       <span class="visually-hidden">Показать большие карточки</span>
-                      <svg class="catalog-full-screen-style-icon">
+                      <svg class="catalog-full-screen-style-icon" aria-hidden="true" focusable="false">
                         <use xlink:href="./images/catalog/catalog-style-sprite.svg#catalog-full-screen-style"></use>
                       </svg>
                     </a>
@@ -148,7 +148,7 @@
                   <li class="catalog__theme-item">
                     <a class="catalog__theme-link" href="#">
                       <span class="visually-hidden">Показать список</span>
-                      <svg class="catalog-list-style-icon">
+                      <svg class="catalog-list-style-icon" aria-hidden="true" focusable="false">
                         <use xlink:href="./images/catalog/catalog-style-sprite.svg#catalog-list-style"></use>
                       </svg>
                     </a>
@@ -166,24 +166,18 @@
                   <img class="card__img" src="./images/catalog/catalog-hotel-1.jpg" width="300" height="212"
                     alt="Вид на звездное небо между двух скал.">
                 </a>
-                <div class="card_wrapper-space-between">
-                  <span class="card__text">Гостиница</span>
-                  <span class="card__price">От <span class="card__price-number">4000</span> ₽</span>
-                </div>
-                <div class="card_wrapper-space-between">
-                  <a class="card__link" href="#">Подробнее</a>
-                  <button class="button card__button" type="button">В избранное</button>
-                </div>
-                <div class="card_wrapper-space-between">
-                  <ul class="card__stars-list">
-                    <li class="card__star"></li>
-                    <li class="card__star"></li>
-                    <li class="card__star"></li>
-                    <li class="card__star"></li>
-                    <li></li>
-                  </ul>
-                  <p class="card__rating">Рейтинг: <span class="card__rating-score">8,5</span></p>
-                </div>
+                <span class="card__text">Гостиница</span>
+                <span class="card__price">От <span class="card__price-number">4000</span> ₽</span>
+                <a class="button card__link" href="#">Подробнее</a>
+                <button class="button card__button" type="button">В избранное</button>
+                <ul class="card__stars-list">
+                  <li class="card__star"></li>
+                  <li class="card__star"></li>
+                  <li class="card__star"></li>
+                  <li class="card__star"></li>
+                  <li></li>
+                </ul>
+                <p class="card__rating">Рейтинг: <span class="card__rating-score">8,5</span></p>
               </li>
 
               <li class="catalog__card-item card">
@@ -194,26 +188,19 @@
                   <img class="card__img" src="./images/catalog/catalog-hotel-2.jpg" width="300" height="212"
                     alt="Вид на мощные и массивные горы, скалу Белл-Рок под пасмурным небом и с радугой.">
                 </a>
-                <div class="card_wrapper-space-between">
-                  <span class="card__text">Гостиница</span>
-                  <span class="card__price">От <span class="card__price-number">5000</span> ₽</span>
-                </div>
-                <div class="card_wrapper-space-between">
-                  <a class="card__link" href="#">Подробнее</a>
-                  <button class="button card__button" type="button">В избранное</button>
-                </div>
-                <div class="card_wrapper-space-between">
-                  <ul class="card__stars-list">
-                    <li class="card__star"></li>
-                    <li class="card__star"></li>
-                    <li class="card__star"></li>
-                    <li class="card__star"></li>
-                    <li></li>
-                  </ul>
-                  <p class="card__rating">Рейтинг: <span class="card__rating-score">9,2</span></p>
-                </div>
+                <span class="card__text">Гостиница</span>
+                <span class="card__price">От <span class="card__price-number">5000</span> ₽</span>
+                <a class="button card__link" href="#">Подробнее</a>
+                <button class="button card__button card__button_active" type="button">В избранном</button>
+                <ul class="card__stars-list">
+                  <li class="card__star"></li>
+                  <li class="card__star"></li>
+                  <li class="card__star"></li>
+                  <li class="card__star"></li>
+                  <li></li>
+                </ul>
+                <p class="card__rating">Рейтинг: <span class="card__rating-score">9,2</span></p>
               </li>
-
               <li class="catalog__card-item card">
                 <a class="card__title-link" href="#">
                   <h3 class="card__title">Desert Quail Inn</h3>
@@ -222,26 +209,19 @@
                   <img class="card__img" src="./images/catalog/catalog-hotel-3.jpg" width="300" height="212"
                     alt="Вид на скалу Белл-Рок в дневное время.">
                 </a>
-                <div class="card_wrapper-space-between">
-                  <span class="card__text">Гостиница</span>
-                  <span class="card__price">От <span class="card__price-number">2500</span> ₽</span>
-                </div>
-                <div class="card_wrapper-space-between">
-                  <a class="card__link" href="#">Подробнее</a>
-                  <button class="button card__button" type="button">В избранное</button>
-                </div>
-                <div class="card_wrapper-space-between">
-                  <ul class="card__stars-list">
-                    <li class="card__star"></li>
-                    <li class="card__star"></li>
-                    <li class="card__star"></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                  <p class="card__rating">Рейтинг: <span class="card__rating-score">6,9</span></p>
-                </div>
+                <span class="card__text">Гостиница</span>
+                <span class="card__price">От <span class="card__price-number">2500</span> ₽</span>
+                <a class="button card__link" href="#">Подробнее</a>
+                <button class="button card__button" type="button">В избранное</button>
+                <ul class="card__stars-list">
+                  <li class="card__star"></li>
+                  <li class="card__star"></li>
+                  <li class="card__star"></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <p class="card__rating">Рейтинг: <span class="card__rating-score">6,9</span></p>
               </li>
-
               <li class="catalog__card-item card">
                 <a class="card__title-link" href="#">
                   <h3 class="card__title">GreenTree Inn</h3>
@@ -250,34 +230,39 @@
                   <img class="card__img" src="./images/catalog/catalog-hotel-4.jpg" width="300" height="212"
                     alt="Вид на скалу Белл-Рок и звездное небо в ночное время.">
                 </a>
-                <div class="card_wrapper-space-between">
-                  <span class="card__text">Гостиница</span>
-                  <span class="card__price">От <span class="card__price-number">1500</span> ₽</span>
-                </div>
-                <div class="card_wrapper-space-between">
-                  <a class="card__link" href="#">Подробнее</a>
-                  <button class="button card__button" type="button">В избранное</button>
-                </div>
-                <div class="card_wrapper-space-between">
-                  <ul class="card__stars-list">
-                    <li class="card__star"></li>
-                    <li class="card__star"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                  <p class="card__rating">Рейтинг: <span class="card__rating-score">5,0</span></p>
-                </div>
+                <span class="card__text">Гостиница</span>
+                <span class="card__price">От <span class="card__price-number">1500</span> ₽</span>
+                <a class="button card__link" href="#">Подробнее</a>
+                <button class="button card__button" type="button">В избранное</button>
+                <ul class="card__stars-list">
+                  <li class="card__star"></li>
+                  <li class="card__star"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <p class="card__rating">Рейтинг: <span class="card__rating-score">5,0</span></p>
               </li>
             </ul>
-
             <ul class="catalog__pagination pagination">
-              <li class="pagination__item"><a class="pagination__link pagination__link_current">1</a></li>
-              <li class="pagination__item"><a class="pagination__link">2</a></li>
-              <li class="pagination__item"><a class="pagination__link">3</a></li>
-              <li class="pagination__item"><a class="pagination__link">4</a></li>
-              <li class="pagination__item"><a class="pagination__link pagination__link_others">...</a></li>
-              <li class="pagination__item"><a class="pagination__link">10</a></li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link_current" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">4</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link_others">...</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">10</a>
+              </li>
             </ul>
           </div>
         </section>
@@ -304,7 +289,7 @@
           <li class="footer__item">
             <a class="footer__link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Перейти в Vkontakte.</span>
-              <svg class="footer-vk-icon">
+              <svg class="footer-vk-icon" aria-hidden="true" focusable="false">
                 <use xlink:href="./images/footer/sprite.svg#footer-vk-icon"></use>
               </svg>
             </a>
@@ -312,14 +297,15 @@
           <li class="footer__item">
             <a class="footer__link" href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Перейти в Telegram.</span>
-              <svg class="footer-telegram-icon">
+              <svg class="footer-telegram-icon" aria-hidden="true" focusable="false">
                 <use xlink:href="./images/footer/sprite.svg#footer-telegram-icon"></use>
               </svg>
             </a>
           </li>
-          <li class="footer__item"><a class="footer__link" href="https://www.youtube.com/user/htmlacademyru">
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Перейти в Youtube.</span>
-              <svg class="footer-youtube-icon">
+              <svg class="footer-youtube-icon" aria-hidden="true" focusable="false">
                 <use xlink:href="./images/footer/sprite.svg#footer-youtube-icon"></use>
               </svg>
             </a>
@@ -327,8 +313,10 @@
         </ul>
         <a class="footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="footer__logo" href="https://htmlacademy.ru/">
-          <img class="footer__logo-img" src="./images/footer/footer-htmlacademy-logo.svg" width="115" height="33"
-            alt="Логотип сайта html academy." loading="lazy">
+          <span class="visually-hidden">Перейти на сайт HTML Academy.</span>
+          <svg class="footer__logo-img">
+            <use xlink:href="./images/footer/sprite.svg#footer-htmlacademy-logo"></use>
+          </svg>
         </a>
       </footer>
     </div>

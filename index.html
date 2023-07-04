@@ -81,58 +81,70 @@
           <h2 class="visually-hidden">Преимущества города Седона</h2>
           <ul class="advantages__list">
             <li class="advantages__card-item">
-              <h3 class="advantages__card-title">Настоящий&nbsp городок</h3>
-              <p class="advantages__card-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </li>
-            <li class="advantages__card-img">
+              <div class="advantages__card-wrapper">
+                <h3 class="advantages__card-title">Настоящий&nbsp городок</h3>
+                <p class="advantages__card-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
               <img class="advantages__img" src="./images/advantages-section/advantages-photo-1.jpg" width="800"
                 height="385" alt="Вид на здание в городе Седона." loading="lazy">
             </li>
-            <li class="advantages__card-item advantages__card-item_size">
-              <h3 class="advantages__card-title">Небольшая площадь</h3>
-              <p class="advantages__card-text advantages__card-text_color">Все достопримечательности находятся очень
-                близко</p>
+            <li class="advantages__card-item">
+              <div class="advantages__card-wrapper">
+                <h3 class="advantages__card-title">Небольшая площадь</h3>
+                <p class="advantages__card-text advantages__card-text_color">Все достопримечательности находятся очень
+                  близко</p>
+              </div>
             </li>
             <li class="advantages__card-item">
-              <h3 class="advantages__card-title">Красивая
-                дорога</h3>
-              <p class="advantages__card-text advantages__card-text_color">Ехать в Седону из Лас-Вегаса совсем не
-                скучно!
-              </p>
+              <div class="advantages__card-wrapper">
+                <h3 class="advantages__card-title">Красивая
+                  дорога</h3>
+                <p class="advantages__card-text advantages__card-text_color">Ехать в Седону из Лас-Вегаса совсем не
+                  скучно!
+                </p>
+              </div>
             </li>
             <li class="advantages__card-item">
-              <h3 class="advantages__card-title">Мало
-                туристов</h3>
-              <p class="advantages__card-text advantages__card-text_color">Большинство едет в Гранд Каньон и толпится
-                там
-              </p>
+              <div class="advantages__card-wrapper">
+                <h3 class="advantages__card-title">Мало
+                  туристов</h3>
+                <p class="advantages__card-text advantages__card-text_color">Большинство едет в Гранд Каньон и толпится
+                  там
+                </p>
+              </div>
             </li>
-            <li class="advantages__card-img">
+            <li class="advantages__card-item">
               <img class="advantages__img" src="./images/advantages-section/advantages-photo-2.jpg" width="800"
                 height="385" alt="Мост дьявола." loading="lazy">
-            </li>
-            <li class="advantages__card-item">
-              <h3 class="advantages__card-title">Там есть<br> мост дьявола</h3>
-              <p class="advantages__card-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <div class="advantages__card-wrapper">
+                <h3 class="advantages__card-title">Там есть<br> мост дьявола</h3>
+                <p class="advantages__card-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
             </li>
           </ul>
           <h2 class="advantages__title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="advantages__text">Опытный персонал и качественное обслуживание!</p>
           <ul class="advantages__plus-list">
             <li class="advantages__plus-item">
-              <h3 class="advantages__plus-title">Жильё</h3>
-              <p class="advantages__plus-text">Рекомендуем пожить в настоящем мотеле,
-                всё как в кино!</p>
+              <div class="advantages__card-wrapper">
+                <h3 class="advantages__plus-title">Жильё</h3>
+                <p class="advantages__plus-text">Рекомендуем пожить в настоящем мотеле,
+                  всё как в кино!</p>
+              </div>
             </li>
             <li class="advantages__plus-item">
-              <h3 class="advantages__plus-title">Еда</h3>
-              <p class="advantages__plus-text">Всегда заказывайте
-                топовый фирменный бургер, вы не разочаруетесь!</p>
+              <div class="advantages__card-wrapper">
+                <h3 class="advantages__plus-title">Еда</h3>
+                <p class="advantages__plus-text">Всегда заказывайте
+                  топовый фирменный бургер, вы не разочаруетесь!</p>
+              </div>
             </li>
             <li class="advantages__plus-item">
-              <h3 class="advantages__plus-title">Сувениры</h3>
-              <p class="advantages__plus-text">Не только китайского,
-                но и настоящего местного производства!</p>
+              <div class="advantages__card-wrapper">
+                <h3 class="advantages__plus-title">Сувениры</h3>
+                <p class="advantages__plus-text">Не только китайского,
+                  но и настоящего местного производства!</p>
+              </div>
             </li>
           </ul>
         </section>
@@ -169,7 +181,7 @@
           <li class="footer__item">
             <a class="footer__link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Перейти в Vkontakte.</span>
-              <svg class="footer-vk-icon">
+              <svg class="footer-vk-icon" aria-hidden="true" focusable="false">
                 <use xlink:href="./images/footer/sprite.svg#footer-vk-icon"></use>
               </svg>
             </a>
@@ -177,14 +189,15 @@
           <li class="footer__item">
             <a class="footer__link" href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Перейти в Telegram.</span>
-              <svg class="footer-telegram-icon">
+              <svg class="footer-telegram-icon" aria-hidden="true" focusable="false">
                 <use xlink:href="./images/footer/sprite.svg#footer-telegram-icon"></use>
               </svg>
             </a>
           </li>
-          <li class="footer__item"><a class="footer__link" href="https://www.youtube.com/user/htmlacademyru">
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Перейти в Youtube.</span>
-              <svg class="footer-youtube-icon">
+              <svg class="footer-youtube-icon" aria-hidden="true" focusable="false">
                 <use xlink:href="./images/footer/sprite.svg#footer-youtube-icon"></use>
               </svg>
             </a>
@@ -192,8 +205,12 @@
         </ul>
         <a class="footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="footer__logo" href="https://htmlacademy.ru/">
-          <img class="footer__logo-img" src="./images/footer/footer-htmlacademy-logo.svg" width="115" height="33"
-            alt="Логотип сайта html academy." loading="lazy">
+          <span class="visually-hidden">Перейти на сайт HTML Academy.</span>
+          <svg class="footer__logo-img">
+            <use xlink:href="./images/footer/sprite.svg#footer-htmlacademy-logo"></use>
+          </svg>
+          <!-- <img class="footer__logo-img" src="./images/footer/footer-htmlacademy-logo.svg" width="115" height="33"
+            alt="Логотип сайта html academy." loading="lazy"> -->
         </a>
       </footer>
     </div>
